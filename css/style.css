@@ -1,0 +1,117 @@
+header{
+    background: white;
+    padding:0%;
+}
+title{
+  font-weight: bold;
+}
+footer{
+  background-color: rgb(15, 15, 15);
+  min-height: 100px;
+  padding: 15px;
+  margin:0 auto;
+}
+footer span.fBaslik{
+  font:16px/23px;
+  font-weight: 700;
+  color:rgb(255, 255, 255);
+   
+}
+footer ul{
+  list-style: non;
+  margin:0;
+  padding:0;
+}
+footer ul li{
+  list-style: non;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+  color:white;
+}
+footer ul li a{
+  list-style: non;
+  margin:0;
+  padding:0;
+}
+
+.colon2 ul{
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-style:italic;
+
+}
+.navbar{
+    background: black;
+    padding: 1%;
+   
+    border: 0;
+margin-top:5px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover{
+    background: #ccc;
+    color:white;
+}
+
+.container-fluid{
+    margin:0;
+    padding:0;
+}
+
+.content .colon{
+  margin:250px 50px;
+  margin-top: 30px;
+
+}
+.content .colonsehrim{
+  margin:250px 50px;
+  margin-top: 30px;
+}
+
+p{        
+    font-size: 12pt;
+  
+    color:rgb(43, 14, 9);
+    font-weight: bold;
+    font-style: italic;
+}
+.carousel-inner p{
+  color:white
+}
+body {
+    border: 12px solid black;  
+  }
+
+.carousel-inner{
+  width:100%;
+  height: 100%;
+
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+.margintop25{
+  margin-top: 25px;
+  padding-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+
+}
+
+.margintop30{
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+

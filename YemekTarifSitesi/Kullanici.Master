@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="YemekTarifSitesi.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .auto-style2 {
+            font-size: large;
+            background-color:#FEFFFF;
+        }
+        .auto-style3 {
+            font-size: large;
+            background-color: #blue;
+            height: 23px;
+        }
+        .auto-style4 {
+            background-color: #FF9999;
+        }
+        .auto-style5 {
+            background-color: #FEFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+        <div style="height: 152px; width: 750px; margin-left:300px; background-color: #6699FF;">
+            <span class="auto-style4"><span class="auto-style5">
+        <!-- ilk divin özellikleri aşağıdaki div de arasında boşluk kalması için (margin ile de yapılabilir-->
+            <asp:Image ID="Image1" runat="server" Height="151px" ImageUrl="~/Resimler/head.jpg" Width="748px" />
+            </span></span>
+        </div>
+
+    <div style="height:20px; width:750px; margin-left:300px""></div> <!--boşluk için-->
+     <div style="height:30px; width:750px; margin-left:300px; background-color: #ffffff;">
+         <table class="auto-style1">
+             <tr>
+                 <td class="auto-style3"><a href="Anasayfa.aspx"> <span class="auto-style5">ANA SAYFA</span></a></td>
+                 <td class="auto-style3"><a href="GununYemegi.aspx"><span class="auto-style5">GÜNÜN YEMEĞİ</span></a></td>
+                 <td class="auto-style3"><a href="TarifOner.aspx"><span class="auto-style5">TARİF ÖNER</span></a></td>
+                 <td class="auto-style3"><a href="Hakkimizda.aspx"><span class="auto-style5">HAKKIMIZDA</span></a></td>
+                 <td class="auto-style3"><a href="iletisim.aspx"> <span class="auto-style5">İLETİŞİM</span></a></td>
+             </tr>
+         </table>
+    </div> 
+    <!--menü-->
+    <div style="height:20px; width:750px; margin-left:300px""></div> <!--boşluk için-->
+    <div style="height:auto; width:700px; margin-left:300px; background-color: #FFFFFF;"> <span class="auto-style4"><span class="auto-style5"> <!--alt soldaki kutu-->
+
+        </span></span>
+
+    <div style="height:auto; float:left; width:200px; margin-left:0px; background-color: #FF9999;">   
+        <strong><span class="auto-style2">KATEGORİLER</span></strong><br class="auto-style5" />
+        <br class="auto-style5" />
+        <asp:DataList ID="DataList1" runat="server" Height="157px" Width="199px">
+            <ItemTemplate>
+                <div style="border-style: groove; border-width: medium">
+               <a href="KategoriDetay.aspx?Kategoriid=<%# Eval("Kategoriid")%>">     <asp:Label ID="Label1" runat="server" BorderColor="#FF5050" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                    &nbsp;(<asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label></a>
+                    )</div>
+            </ItemTemplate>
+        </asp:DataList>
+        </div>
+    <div  style="height:auto; float:left; width:450px; margin-left:50px; ">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p class="auto-style5">
+                &nbsp;</p>
+            </asp:ContentPlaceHolder>
+  <!--alt sağdaki page kutu-->
+        </div>
+        </div>
+    </form>
+
+
+        <!--eğer bir önceki divin altına değilde yanına yazmak isteniyorsa bir öncekinini divinin kapanış tagini sonrakinini altına at-->
+
+    </body>
+</html>
+    
